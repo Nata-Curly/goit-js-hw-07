@@ -21,8 +21,10 @@ function onClick(evt) {
         return;
     }
     evt.preventDefault();
+    
+}
 
-    let lightbox = new SimpleLightbox('.gallery a', { 
+const lightbox = new SimpleLightbox('.gallery a', { 
         captionSelector: 'img',
         captionsData: 'alt', 
         captionPosition: 'bottom',
@@ -30,10 +32,7 @@ function onClick(evt) {
         enableKeyboard: true,
         animationSlide: true,
         overlay: true,
- });
-    
-}
-
+});
 
 // Сделай такую же галерею как в первом задании, но используя библиотеку SimpleLightbox, которая возьмет на себя обработку кликов по изображениям, открытие и закрытие модального окна, а также пролистывание изображений при помощи клавиатуры. Посмотри демо видео работы галереи с подключенной библиотекой.
 
